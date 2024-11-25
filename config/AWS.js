@@ -1,4 +1,3 @@
-import dotenv from 'dotenv';
 import { S3Client, PutObjectCommand } from '@aws-sdk/client-s3';
 import {
   RekognitionClient,
@@ -14,9 +13,6 @@ import {
 } from '@aws-sdk/client-transcribe';
 import { AWS_ACCESS_ID, AWS_ACCESS_SECRET_KEY, AWS_REGION } from '../KEYS.js';
 
-dotenv.config({
-  path: '.env',
-});
 
 // AWS Configuration Class
 class AWSConfig {
